@@ -18,9 +18,10 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-group :development, :test do
-  gem 'sqlite3'
-  gem 'rspec-rails'
+group :development do
+  gem 'sqlite3', '~> 1.3.6'
+  gem 'rspec-rails', '2.9.0'
+  gem 'guard-rspec'
 end
 
 group :production do
@@ -28,8 +29,11 @@ group :production do
 end
 
 group :test do
-  gem 'capybara'
-end
+  gem 'rspec-rails', '2.9.0'
+  gem 'capybara', '1.1.2'
+  gem 'rb-inotify', '0.8.8'
+  gem 'libnotify', '0.5.9'
+end 
 
 gem 'jquery-rails'
 
