@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.3'
+gem 'bootstrap-sass', '~> 2.0.2'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -31,7 +32,7 @@ end
 group :test do
   gem 'rspec-rails', '2.9.0'
   gem 'capybara', '1.1.2'
-  gem 'rb-inotify', '0.8.8'
+  gem 'rb-inotify', '0.8.8' 
   gem 'libnotify', '0.5.9'
 end 
 
